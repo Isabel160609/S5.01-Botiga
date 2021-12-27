@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "f8c83f2c-2f82-4c8c-a0a6-cfbe53095ac5",
+		"name": "Botiga",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "llistar botigues",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/botiga/shops",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"botiga",
+						"shops"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "llistar cuadres  botigue",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/botiga/shops/1/pictures",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"botiga",
+						"shops",
+						"1",
+						"pictures"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crear botiga",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nomBotiga\": \"Tienda 1\",\r\n     \"numMaxquadres\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/botiga/shops",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"botiga",
+						"shops"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crearcuadre",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nomQuadre\": \"Producto 2\",\r\n    \"autorQuadre\": \"anonimo\",\r\n    \"preu\": 10.0,\r\n    \"fecha\": \"2021-12-26T23:00:00.000+00:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/botiga/shops/3/pictures",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"botiga",
+						"shops",
+						"3",
+						"pictures"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/botiga/shops/1/pictures",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"botiga",
+						"shops",
+						"1",
+						"pictures"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
